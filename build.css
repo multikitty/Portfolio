@@ -411,13 +411,12 @@ a {
   font-size: 20px;
   font-weight: 600;
 }
-.WorkItem-subtitle {
+.WorkItem-description {
   font-size: 15px;
   line-height: 15px;
   font-weight: 400;
   color: #708896;
   transition: color 0.6s;
-  padding-bottom: 8px;
 }
 .WorkItem-dot {
   display: inline-block;
@@ -443,7 +442,15 @@ a {
   transform-origin: 0 0;
   transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
-.WorkItem:hover .WorkItem-subtitle {
+.WorkItem-tags span {
+  background: #476272;
+  border-radius: 2px;
+  padding: 3px 5px;
+  margin-right: 3px;
+  font-size: 9px;
+  color: white;
+}
+.WorkItem:hover .WorkItem-description {
   color: #fff;
 }
 /* .WorkItem:hover .WorkItem-content { */
@@ -468,7 +475,7 @@ a {
   .WorkItem-title {
     font-size: 18px;
   }
-  .WorkItem-subtitle {
+  .WorkItem-description {
     font-size: 14px;
     line-height: 14px;
   }
@@ -484,7 +491,7 @@ a {
   .WorkItem-roll {
     display: none;
   }
-  .WorkItem:hover .WorkItem-subtitle {
+  .WorkItem:hover .WorkItem-description {
     color: #708896;
   }
   .WorkItem:hover .WorkItem-content,
@@ -494,7 +501,7 @@ a {
   .WorkItem-title {
     font-size: 16px;
   }
-  .WorkItem-subtitle {
+  .WorkItem-description {
     font-size: 12px;
     line-height: 12px;
     display: block;
